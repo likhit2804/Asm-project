@@ -1,2 +1,1 @@
-GPD: {'shape': 0.15286144354050163, 'scale': 0.8155157728207618}
-Calibrated K: 4.0, RMSE: 0.05008992682137643
+GPD shape=0.246, scale=0.991, threshold=2.400

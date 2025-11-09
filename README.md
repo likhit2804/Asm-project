@@ -1,13 +1,15 @@
-Urban Flood Forecast (v1)
--------------------------
+# Urban Flood Risk - Real Data Version
 
-This package extends the existing stochastic pipeline with a simple rainfall forecasting
-module (ARIMA) and converts predicted rainfall into forecasted runoff using the calibrated
-linear reservoir.
+This is the cleaned, ready-to-run Python package for real rainfall-driven flood risk analysis.
 
-Usage:
-    python -m src.main_forecast data/your_rainfile.csv
+## Usage
+1. Place your Kaggle rainfall dataset (with `date_time` and `precipMM`) inside the `data/` folder.
+2. Run:
+   ```
+   python main.py data/your_rainfall.csv
+   ```
+3. Outputs (plots, summaries) will appear in `/results`.
 
-Outputs saved to results/: acf.png, evt_fit.png, rain_forecast.png, runoff_forecast.png, summary.txt
-
-Requirements: numpy, pandas, matplotlib, scipy, statsmodels
+## Requirements
+- Python 3.10+
+- numpy, pandas, scipy, matplotlib, statsmodels
